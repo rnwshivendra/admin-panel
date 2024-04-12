@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+  height: 100vh;
+}
+
 header{
   display: flex;
 }
@@ -20,6 +24,8 @@ header{
   height: 60px;
   width: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -45,6 +51,7 @@ header{
     width: 100%;
     border-radius: 0;
     height: 90px;
+    background-color: #509e45;
 }
 
 #content{
@@ -52,3 +59,22 @@ header{
   border: 1px solid #191fc5;
 }
 
+
+#modal{
+  position: absolute;
+  top: 25%;
+
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form>input{
+   margin: 20px;
+
+}

@@ -1,8 +1,6 @@
 
 
-$("#content>div").hide();
-$("#user").show();
-
+$("#modal").hide();
 
 $("#sidebar>button").on("click", function () {
     $("#content>div").hide();
@@ -19,3 +17,10 @@ $(".fa-solid").on("click",function(){
     })
 })
 
+
+$("#showModal").on("click",function(){
+     $("#modal").toggle();
+    $("#modal").css("backdrop-filter","blur(9px)")
+})
+
+console.log(h);
